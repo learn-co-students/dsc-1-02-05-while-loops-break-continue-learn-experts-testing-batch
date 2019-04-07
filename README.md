@@ -164,7 +164,7 @@ for name in names:
     formatted_name = ""
     if len(formatted_names) < 4:
         check_count += 1
-        if not name.startswith('w') or not name.startswith("W"):
+        if not name.startswith('w') and not name.startswith("W"):
             check_count += 1
             formatted_names.append(name.title())
             
